@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "name": "Sản phẩm E",
+      "price": "500",
+      "id": 1
+    },
+    {
+      "name": "Sản phẩm E",
+      "price": "200",
+      "id": 2
+    },
+    {
+      "name": "Sản phẩm cũ",
+      "price": "5000",
+      "id": 5
+    },
+    {
+      "name": "Sản phẩm G",
+      "img": {},
+      "price": "5000",
+      "id": 6
+    },
+    {
+      "name": "Sản phẩm A",
+      "price": "300",
+      "id": 7
+    },
+    {
+      "name": "Sản phẩm B",
+      "price": "300",
+      "id": 8
+    }
+  ],
+  "user": [
+    {
+      "username": "thanhtra",
+      "email": "thanhtra123456@gmail.com",
+      "password": "tra123456"
+    }
+  ]
+}
