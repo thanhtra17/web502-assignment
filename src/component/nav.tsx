@@ -5,22 +5,27 @@ type Prop = {}
 const Nav = (prop: Prop) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light ">
-  <div className="container-fluid">
-    <div className="collapse navbar-collapse" id="navbarNav">
+  <div className="text-center">
+   
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to={`/`} className="nav-link active text-white" aria-current="page" >Home</Link>
+          <Link to={`/`} className="nav-link active mx-3 text-white hover:border-2 border-top-0 border-end-0 border-start-0" aria-current="page" >HOME</Link>
         </li>
         <li className="nav-item">
-          <Link  to={`/product`} className="nav-link text-white">Shop</Link>
+          <Link  to={`/product`} className="nav-link mx-3 text-white hover:border-2 border-top-0 border-end-0 border-start-0">SHOP</Link>
         </li>
         <li className="nav-item">
-          <Link to={`/signin`} className="nav-link text-white" >SignIn</Link>
+          <Link to={`/`} className="nav-link mx-3 text-white hover:border-2 border-top-0 border-end-0 border-start-0" >ABOUT US</Link>
         </li>
       </ul>
-    </div>
+    
   </div>
 </nav>
+
+
+
+
+
 
     )
 }

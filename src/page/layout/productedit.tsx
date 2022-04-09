@@ -5,13 +5,14 @@ import { read } from "../../api/product";
 import { ProductType } from "../../type/product";
 
 type ProductAddProps = {
-    // name:string,
+    
     onUpdate: (product: ProductType) =>void
 }
 
 type Inputs = {
     name: string,
     price: number
+    img:string
 };
 
 
@@ -44,7 +45,7 @@ const ProductEdit = (props:  ProductAddProps) =>{
             </form> */}
             {/*  */}
     <form id="edit" onSubmit={handleSubmit(onSubmit)} className="mx-5">
-  <h1 className="font-bold">Sửa sản phẩm</h1>
+  <h1 className="font-bold my-5">Sửa sản phẩm</h1>
   <div className="mb-6">
     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name</label>
     <input  type="text" {...register('name')} id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />

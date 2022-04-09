@@ -11,7 +11,7 @@ export const list = () =>{
     return instance.get(url);
 }
 
-export const read = (id:Number) =>{
+export const read = (id:number) =>{
     const url = `/products/${id}`;
     return instance.get(url);
 }
@@ -22,6 +22,6 @@ export const remove = (id:Number) =>{
 }
 
 export const update = (product: ProductType) =>{
-    const url = `/products/${product.id}`;
-    return instance.put(url,product);
+    const url = `/products/${product._id}`;
+    return instance.patch(url,product);
 }

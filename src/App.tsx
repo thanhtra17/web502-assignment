@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import WebsiteLayout from './page/layout/websitelayout'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { ProductType } from './type/product'
@@ -38,7 +38,8 @@ function App() {
   const onHandleRemove = (id: number) => {
     remove(id);
     // reRender
-    setProducts(products.filter(item => item.id !== id))
+    setProducts(products.filter(item => item._id !== id))
+    Navigate
   }
 
   const onHandleAdd = async (product: any) => {
